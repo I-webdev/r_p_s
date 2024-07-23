@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.6 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -592,21 +592,17 @@ video {
   position: fixed;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .block {
@@ -621,28 +617,12 @@ video {
   display: flex;
 }
 
-.min-h-\[10rem\] {
-  min-height: 10rem;
+.min-h-\[7rem\] {
+  min-height: 7rem;
 }
 
 .min-h-svh {
   min-height: 100svh;
-}
-
-.min-h-\[8rem\] {
-  min-height: 8rem;
-}
-
-.min-h-\[5rem\] {
-  min-height: 5rem;
-}
-
-.min-h-\[rem\] {
-  min-height: rem;
-}
-
-.min-h-\[7rem\] {
-  min-height: 7rem;
 }
 
 .min-w-full {
@@ -663,26 +643,6 @@ video {
 
 .justify-center {
   justify-content: center;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.gap-1 {
-  gap: 0.25rem;
-}
-
-.gap-12 {
-  gap: 3rem;
-}
-
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .gap-2 {
@@ -741,16 +701,6 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.px-11 {
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .pr-4 {
   padding-right: 1rem;
 }
@@ -782,9 +732,9 @@ video {
   line-height: 2.5rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-xl {
@@ -797,22 +747,8 @@ video {
   line-height: 1;
 }
 
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-
 .font-semibold {
   font-weight: 600;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .text-black {
@@ -828,5 +764,10 @@ video {
 @media (min-width: 640px) {
   .sm\:gap-12 {
     gap: 3rem;
+  }
+
+  .sm\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
   }
 }

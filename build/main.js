@@ -16,8 +16,8 @@ const emoji = ["✊", "✋", "✌️"];
 count = JSON.parse(localStorage.getItem("count")) || 0;
 count2 = JSON.parse(localStorage.getItem("count2")) || 0;
 
-numb.innerHTML = `<span>You</span><span class="text-9xl font-semibold">${count}</span>`;
-numb2.innerHTML = `<span class="text-9xl font-semibold">${count2}</span><span>bot</span>`;
+numb.innerText = `${count}`;
+numb2.innerHTML = `${count2}`;
 
 fistUpEmoji.addEventListener("click", () => {
   let randomEmoji = emoji[Math.floor(Math.random() * emoji.length)];
@@ -31,7 +31,7 @@ fistUpEmoji.addEventListener("click", () => {
   } else if (fistUpEmoji.innerText < randomEmoji && randomEmoji !== "✌️") {
     count2++;
 
-    numb2.innerHTML = `<span class="text-9xl font-semibold">${count2}</span><span>bot</span>`;
+    numb2.innerText = `${count2}`;
 
     const para = document.createElement("h1");
     para.innerText = `You lost! computer chose ${randomEmoji}`;
@@ -41,7 +41,7 @@ fistUpEmoji.addEventListener("click", () => {
     }, 1000);
   } else if (fistUpEmoji.innerHTML < randomEmoji && randomEmoji !== "🤚") {
     count++;
-    numb.innerHTML = `<span>You</span><span class="text-9xl font-semibold">${count}</span>`;
+    numb.innerText = `${count}`;
 
     const para = document.createElement("h1");
     para.innerText = `You won! Computer chose ${randomEmoji}`;
@@ -63,7 +63,7 @@ negative.addEventListener("click", () => {
     }, 1000);
   } else if (negative.innerText < randomEmoji) {
     count2++;
-    numb2.innerHTML = `<span class="text-9xl font-semibold">${count2}</span><span>bot</span>`;
+    numb2.innerText = `${count2}`;
 
     const para = document.createElement("h1");
     para.innerText = `You lost! computer chose ${randomEmoji}`;
@@ -73,7 +73,7 @@ negative.addEventListener("click", () => {
     }, 1000);
   } else if (randomEmoji < negative.innerText) {
     count++;
-    numb.innerHTML = `<span>You</span><span class="text-9xl font-semibold">${count}</span>`;
+    numb.innerText = `${count}`;
 
     const para = document.createElement("h1");
     para.innerText = `You won! Computer chose ${randomEmoji}`;
@@ -95,7 +95,7 @@ neutral.addEventListener("click", () => {
     }, 1000);
   } else if (neutral.innerText > randomEmoji && randomEmoji == "✊") {
     count2++;
-    numb2.innerHTML = `<span class="text-9xl font-semibold">${count2}</span><span>bot</span>`;
+    numb2.innerText = `${count2}`;
 
     const para = document.createElement("h1");
     para.innerText = `You lost! computer chose ${randomEmoji}`;
@@ -103,10 +103,10 @@ neutral.addEventListener("click", () => {
     setTimeout(() => {
       document.querySelector(".dis").removeChild(para);
     }, 1000);
-  } else if (randomEmoji < neutral.innerText && randomEmoji == "🤚") {
+  } else if (randomEmoji < neutral.innerText && randomEmoji !== "✊") {
     count++;
-    numb.innerHTML = `<span>You</span><span class="text-9xl font-semibold">${count}</span>`;
-
+    numb.innerText = `${count}`;
+    console.log("lol");
     const para = document.createElement("h1");
     para.innerText = `You won! Computer chose ${randomEmoji}`;
     document.querySelector(".dis").appendChild(para);
@@ -115,6 +115,7 @@ neutral.addEventListener("click", () => {
     }, 1000);
   }
 });
+
 
 save.addEventListener("click", () => {
   localStorage.setItem("count", JSON.stringify(count));

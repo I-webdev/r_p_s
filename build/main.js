@@ -24,6 +24,7 @@ fistUpEmoji.addEventListener("click", () => {
   if (fistUpEmoji.innerText == randomEmoji) {
     const para = document.createElement("h1");
     para.innerText = `Equality! computer chose ${randomEmoji} too.`;
+    para.style.cssText = "margin-top:3rem";
     document.querySelector(".dis").appendChild(para);
     setTimeout(() => {
       document.querySelector(".dis").removeChild(para);
@@ -36,7 +37,7 @@ fistUpEmoji.addEventListener("click", () => {
     const para = document.createElement("h1");
     
     para.innerText = `You lost! computer chose ${randomEmoji}`;
-    para.style.cssText = "color:red";
+    para.style.cssText = "color:red; margin-top:3rem";
     document.querySelector(".dis").appendChild(para);
     setTimeout(() => {
       document.querySelector(".dis").removeChild(para);
@@ -47,7 +48,7 @@ fistUpEmoji.addEventListener("click", () => {
 
     const para = document.createElement("h1");
     para.innerText = `You won! Computer chose ${randomEmoji}`;
-    para.style.cssText = "color:green";
+    para.style.cssText = "color:green; margin-top:3rem";
     document.querySelector(".dis").appendChild(para);
     setTimeout(() => {
       document.querySelector(".dis").removeChild(para);
@@ -60,6 +61,7 @@ handsUpEmoji.addEventListener("click", () => {
   if (handsUpEmoji.innerText == randomEmoji) {
     const para = document.createElement("h1");
     para.innerText = `Equality! computer chose ${randomEmoji} too.`;
+    para.style.cssText = "margin-top:3rem";
     document.querySelector(".dis").appendChild(para);
     setTimeout(() => {
       document.querySelector(".dis").removeChild(para);
@@ -70,7 +72,7 @@ handsUpEmoji.addEventListener("click", () => {
 
     const para = document.createElement("h1");
     para.innerText = `You lost! computer chose ${randomEmoji}`;
-    para.style.cssText = "color:red";
+    para.style.cssText = "color:red; margin-top:3rem";
     document.querySelector(".dis").appendChild(para);
     setTimeout(() => {
       document.querySelector(".dis").removeChild(para);
@@ -81,7 +83,7 @@ handsUpEmoji.addEventListener("click", () => {
 
     const para = document.createElement("h1");
     para.innerText = `You won! Computer chose ${randomEmoji}`;
-    para.style.cssText = "color:green";
+    para.style.cssText = "color:green; margin-top:3rem";
     document.querySelector(".dis").appendChild(para);
     setTimeout(() => {
       document.querySelector(".dis").removeChild(para);
@@ -94,6 +96,7 @@ fingersUpEmoji.addEventListener("click", () => {
   if (fingersUpEmoji.innerText == randomEmoji) {
     const para = document.createElement("h1");
     para.innerText = `Equality! computer chose ${randomEmoji} too.`;
+    para.style.cssText = "margin-top:3rem";
     document.querySelector(".dis").appendChild(para);
     setTimeout(() => {
       document.querySelector(".dis").removeChild(para);
@@ -104,7 +107,7 @@ fingersUpEmoji.addEventListener("click", () => {
 
     const para = document.createElement("h1");
     para.innerText = `You lost! computer chose ${randomEmoji}`;
-    para.style.cssText = "color:red";
+    para.style.cssText = "color:red; margin-top:3rem";
     document.querySelector(".dis").appendChild(para);
     setTimeout(() => {
       document.querySelector(".dis").removeChild(para);
@@ -115,7 +118,7 @@ fingersUpEmoji.addEventListener("click", () => {
     console.log("lol");
     const para = document.createElement("h1");
     para.innerText = `You won! Computer chose ${randomEmoji}`;
-    para.style.cssText = "color:green";
+    para.style.cssText = "color:green; margin-top:3rem";
     document.querySelector(".dis").appendChild(para);
     setTimeout(() => {
       document.querySelector(".dis").removeChild(para);

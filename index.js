@@ -13,17 +13,6 @@ app.get("/", (req, res)=>{
     res.render("index.ejs");
 });
 
-// app.post("/s", (req, res) => {
-    
-
-//   console.log(req);
-//   console.log("fgf");
-//   res.render("index.ejs");
-// });
-
-
-
-
 
 app.listen(port, ()=>{
     console.log(`server is running on port ${port}`)

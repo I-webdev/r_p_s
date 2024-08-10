@@ -25,9 +25,9 @@ fistUpEmoji.addEventListener("click", () => {
     const para = document.createElement("h1");
     para.innerText = `Equality! computer chose ${randomEmoji} too.`;
     para.style.cssText = "margin-top:3rem";
-    document.querySelector(".dis").appendChild(para);
+    document.querySelector(".winner-display").appendChild(para);
     setTimeout(() => {
-      document.querySelector(".dis").removeChild(para);
+      document.querySelector(".winner-display").removeChild(para);
     }, 1000);
   } else if (fistUpEmoji.innerText < randomEmoji && randomEmoji !== "✌️") {
     count2++;
@@ -38,9 +38,9 @@ fistUpEmoji.addEventListener("click", () => {
     
     para.innerText = `You lost! computer chose ${randomEmoji}`;
     para.style.cssText = "color:red; margin-top:3rem";
-    document.querySelector(".dis").appendChild(para);
+    document.querySelector(".winner-display").appendChild(para);
     setTimeout(() => {
-      document.querySelector(".dis").removeChild(para);
+      document.querySelector(".winner-display").removeChild(para);
     }, 1000);
   } else  {
     count++;
@@ -49,9 +49,9 @@ fistUpEmoji.addEventListener("click", () => {
     const para = document.createElement("h1");
     para.innerText = `You won! Computer chose ${randomEmoji}`;
     para.style.cssText = "color:green; margin-top:3rem";
-    document.querySelector(".dis").appendChild(para);
+    document.querySelector(".winner-display").appendChild(para);
     setTimeout(() => {
-      document.querySelector(".dis").removeChild(para);
+      document.querySelector(".winner-display").removeChild(para);
     }, 1000);
   }
 });
@@ -62,9 +62,9 @@ handsUpEmoji.addEventListener("click", () => {
     const para = document.createElement("h1");
     para.innerText = `Equality! computer chose ${randomEmoji} too.`;
     para.style.cssText = "margin-top:3rem";
-    document.querySelector(".dis").appendChild(para);
+    document.querySelector(".winner-display").appendChild(para);
     setTimeout(() => {
-      document.querySelector(".dis").removeChild(para);
+      document.querySelector(".winner-display").removeChild(para);
     }, 1000);
   } else if (handsUpEmoji.innerText < randomEmoji) {
     count2++;
@@ -73,9 +73,9 @@ handsUpEmoji.addEventListener("click", () => {
     const para = document.createElement("h1");
     para.innerText = `You lost! computer chose ${randomEmoji}`;
     para.style.cssText = "color:red; margin-top:3rem";
-    document.querySelector(".dis").appendChild(para);
+    document.querySelector(".winner-display").appendChild(para);
     setTimeout(() => {
-      document.querySelector(".dis").removeChild(para);
+      document.querySelector(".winner-display").removeChild(para);
     }, 1000);
   } else {
     count++;
@@ -84,9 +84,9 @@ handsUpEmoji.addEventListener("click", () => {
     const para = document.createElement("h1");
     para.innerText = `You won! Computer chose ${randomEmoji}`;
     para.style.cssText = "color:green; margin-top:3rem";
-    document.querySelector(".dis").appendChild(para);
+    document.querySelector(".winner-display").appendChild(para);
     setTimeout(() => {
-      document.querySelector(".dis").removeChild(para);
+      document.querySelector(".winner-display").removeChild(para);
     }, 1000);
   }
 });
@@ -97,9 +97,9 @@ fingersUpEmoji.addEventListener("click", () => {
     const para = document.createElement("h1");
     para.innerText = `Equality! computer chose ${randomEmoji} too.`;
     para.style.cssText = "margin-top:3rem";
-    document.querySelector(".dis").appendChild(para);
+    document.querySelector(".winner-display").appendChild(para);
     setTimeout(() => {
-      document.querySelector(".dis").removeChild(para);
+      document.querySelector(".winner-display").removeChild(para);
     }, 1000);
   } else if (fingersUpEmoji.innerText > randomEmoji && randomEmoji == "✊") {
     count2++;
@@ -108,9 +108,9 @@ fingersUpEmoji.addEventListener("click", () => {
     const para = document.createElement("h1");
     para.innerText = `You lost! computer chose ${randomEmoji}`;
     para.style.cssText = "color:red; margin-top:3rem";
-    document.querySelector(".dis").appendChild(para);
+    document.querySelector(".winner-display").appendChild(para);
     setTimeout(() => {
-      document.querySelector(".dis").removeChild(para);
+      document.querySelector(".winner-display").removeChild(para);
     }, 1000);
   } else {
     count++;
@@ -119,9 +119,9 @@ fingersUpEmoji.addEventListener("click", () => {
     const para = document.createElement("h1");
     para.innerText = `You won! Computer chose ${randomEmoji}`;
     para.style.cssText = "color:green; margin-top:3rem";
-    document.querySelector(".dis").appendChild(para);
+    document.querySelector(".winner-display").appendChild(para);
     setTimeout(() => {
-      document.querySelector(".dis").removeChild(para);
+      document.querySelector(".winner-display").removeChild(para);
     }, 1000);
   }
 });
